@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {};
 
-module.exports = nextConfig
-
+module.exports = nextConfig;
 
 // Injected content via Sentry wizard below
 
@@ -18,6 +17,7 @@ module.exports = withSentryConfig(
     silent: true,
     org: "vivek-inc",
     project: "my-portfolio",
+    authToken: process.env.NEXT_PUBLIC_SENTRY_TOKEN,
   },
   {
     // For all available options, see:
@@ -43,5 +43,5 @@ module.exports = withSentryConfig(
     // https://docs.sentry.io/product/crons/
     // https://vercel.com/docs/cron-jobs
     automaticVercelMonitors: true,
-  }
+  },
 );
