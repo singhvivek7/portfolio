@@ -1,0 +1,22 @@
+.header-wrapper {
+  @apply w-full bg-transparent fixed;
+
+  .header {
+    @apply w-11/12 m-auto flex justify-between items-center py-3;
+
+    .logo {
+      @apply text-4xl font-bold;
+    }
+
+    .nav {
+      @apply flex justify-center items-center gap-5;
+
+      .theme-icon {
+        @apply text-xl cursor-pointer;
+      }
+      .hamburger {
+        @apply text-2xl cursor-pointer;
+      }
+    }
+  }
+}
